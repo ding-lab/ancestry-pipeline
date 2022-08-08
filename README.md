@@ -37,6 +37,8 @@ The tutorial/example notebook you can use to generate the bsub commands that run
 
 I would recommend putting your run directory inside `/scratch1` as tools tend to run faster in scratch1 than in storage1.
 
+NOTE: you will likely need to make some small changes to the example notebook to specify input/output files, etc.
+
 ## Output format
 
 There are two main output folders: `super_population` and `sub_population`. `super_population` contains predictions for the five major ancestry categories used by the 1k genomes project. `sub_population` includes predictions for the many sub-categories used by 1k genomes.
