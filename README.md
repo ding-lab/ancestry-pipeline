@@ -37,6 +37,12 @@ The tutorial/example notebook you can use to generate the bsub commands that run
 
 I would recommend putting your run directory inside `/scratch1` as tools tend to run faster in scratch1 than in storage1.
 
+Compute1 messes with the PATH variable in docker files, causing some libraries not to be found. To fix this, before running bsub, you will need to run the following command:
+
+```bash
+export PATH="/miniconda/envs/ancestry/bin:$PATH"
+```
+
 NOTE: you will likely need to make some small changes to the example notebook to specify input/output files, etc.
 
 ## Output format
